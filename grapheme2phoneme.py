@@ -128,7 +128,7 @@ def map_grapheme_to_phoneme(new_char_idx: int,
     elif current_char == 'q':
         if next_char == 'u':
             if huiptla_char == 'a':
-                phonemes = ['w']
+                phonemes = ['k_w']
             else:
                 phonemes = ['k']
             new_char_idx += 1
@@ -148,7 +148,7 @@ def map_grapheme_to_phoneme(new_char_idx: int,
     # 'h' at the end of the word. Otherwise, treat it as the vowel /u/.
     #
     elif current_char == 'u':
-        if next_char == 'h' and not huiptla_char:
+        if next_char == 'h' and huiptla_char != 'u':
             phonemes = ['w']
             new_char_idx += 1
         elif next_char in {'a', 'i', 'e'}:
