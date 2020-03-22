@@ -185,13 +185,21 @@ def launey(phonemic_word):
 
         elif phoneme == 'ts':
             text += 'tz'
+
         elif phoneme == 'S':
             text += 'x'
+
+        elif phoneme == 't':
+            text += 't'
+
         elif phoneme == 's':
-            if next_phoneme in 'ei':
+            if next_phoneme in {'e', 'i'}:
                 text += 'c'
             else:
                 text += 'z'
+
+        elif phoneme == 'm':
+            text += 'm'
 
         elif phoneme in 'aieo':
             if next_phoneme == '?':

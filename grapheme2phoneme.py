@@ -209,7 +209,6 @@ def map_grapheme_to_phoneme(new_char_idx: int,
     #
     elif current_char in saltillo2bare_vowels:
         phonemes = [saltillo2bare_vowels[current_char], saltillo]
-        new_char_idx += 1
 
     elif current_char in ident_consonants:
         phonemes = [current_char]
