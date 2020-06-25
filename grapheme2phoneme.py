@@ -69,7 +69,7 @@ def map_grapheme_to_phoneme(new_char_idx: int,
         The character at index i + 2. 'Huiptla' is the Nahuatl word meaning
         "the day after tomorrow," used here metaphorically as "the character
         after next." If current char is the second-to-last of the word,
-        `next_char` is an empty str.
+        `huiptla_char` is an empty str.
 
     Returns
     -------
